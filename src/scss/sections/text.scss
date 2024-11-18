@@ -1,0 +1,63 @@
+.text {
+  padding: 50px 0;
+  @media (max-width: 768px) {
+    padding: 20px 0;
+  }
+  &__body {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    @media (max-width: 768px) {
+      gap: 20px;
+    }
+  }
+  &__title {
+    @include adaptiv-font(40, 19, 1);
+    padding: 40px 0;
+    line-height: 120%;
+    letter-spacing: -0.03em;
+    text-transform: uppercase;
+    color: #fcbf24;
+    @media (max-width: 768px) {
+      padding: 20px 0;
+    }
+    @media (max-width: 556px) {
+      padding: 5px 0;
+    }
+  }
+  &__main {
+    @include adaptiv-font(20, 16, 1);
+    line-height: 130%;
+    letter-spacing: -0.03em;
+    color: #fff;
+  }
+  &__list {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  &__list-item {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  &__list-item-top {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  &__item {
+    @include adaptiv-font(24, 16, 1);
+    font-weight: 600;
+    line-height: 120%;
+    letter-spacing: -0.03em;
+    text-transform: uppercase;
+    color: #fff;
+  }
+  &__list-item-bottom {
+    @include adaptiv-font(20, 16, 1);
+    line-height: 120%;
+    letter-spacing: -0.03em;
+    color: #fff;
+  }
+}

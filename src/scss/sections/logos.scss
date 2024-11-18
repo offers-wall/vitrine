@@ -1,0 +1,57 @@
+.logos {
+  margin: 50px 0;
+  &__body {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 50px;
+    @media (max-width: 556px) {
+      gap: 20px;
+    }
+  }
+  &__link {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    position: relative;
+    text-decoration: none;
+    width: 100%;
+    box-sizing: border-box;
+    text-align: left;
+    padding: 8px 16px;
+    @media (max-width: 991px) {
+      width: fit-content;
+      align-items: center;
+      justify-content: center;
+    }
+    img {
+      width: 100px;
+      height: 100px;
+      object-fit: contain;
+      @media (max-width: 991px) {
+        width: 70px;
+        height: 70px;
+      }
+    }
+  }
+  &__bottom {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+    @media (max-width: 991px) {
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+  }
+  &__logo {
+    img {
+      width: 120px;
+      height: 120px;
+      @media (max-width: 768px) {
+        width: 60px;
+        height: 60px;
+      }
+    }
+  }
+}

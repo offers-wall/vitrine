@@ -1,0 +1,31 @@
+.privacy {
+  margin: 50px 0;
+  &__body {
+    display: flex;
+    flex-direction: column;
+    a {
+      color: #fff;
+      border-bottom: 1px solid
+    }
+    h2 {
+      @include adaptiv-font(40, 19, 1);
+      padding: 20px 0;
+      line-height: 120%;
+      letter-spacing: -0.03em;
+      text-transform: uppercase;
+      color: #fcbf24;
+      @media (max-width: 768px) {
+        padding: 20px 0;
+      }
+      @media (max-width: 556px) {
+        padding: 5px 0;
+      }
+    }
+    p {
+      @include adaptiv-font(20, 14, 1);
+      font-weight: 600;
+      color: #bfbfbf;
+      line-height: 30px;
+    }
+  }
+}
