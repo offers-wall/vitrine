@@ -16,10 +16,11 @@ import {
 } from "./modules";
 
 import { formValidation } from "./modules/form";
-
+import getGclid from "./modules/top";
 // Получаем метод validateForm из FormValidate
 
 formValidation();
+getGclid()
 
 /* Раскомментировать для использования */
 // import { MousePRLX } from './libs/parallaxMouse'
